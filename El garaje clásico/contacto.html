@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="El garaje clásico, una newsletter sobre la historia y las curiosidades de los vehículos clásicos." name="description"/>
+<title>Contacto | El garaje clásico</title>
+<link href="estilos.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+<h1>El garaje clásico</h1>
+<p>Una newsletter sobre vehículos clásicos</p>
+</header>
+<nav aria-label="Navegación principal">
+<a href="index.html">Inicio</a>
+<a href="informacion.html">Información</a>
+<a aria-current="page" class="actual" href="contacto.html">Contacto</a>
+</nav>
+<main>
+<section>
+<h2>Contacto sobre la newsletter</h2>
+<p>Utiliza este formulario para pedir información sobre la newsletter El garaje clásico o contarnos qué vehículos y temas te gustaría encontrar en sus boletines.</p>
+<p class="aviso">Formulario de contacto de práctica, sin envío de mensajes.</p>
+<form action="contacto.html" method="get">
+<fieldset>
+<legend>Datos de contacto</legend>
+<label for="nombre">Nombre y apellidos *</label>
+<input id="nombre" name="nombre" required="" type="text"/>
+<label for="correo">Correo electrónico *</label>
+<input id="correo" name="correo" required="" type="email"/>
+<label for="telefono">Teléfono (opcional)</label>
+<input id="telefono" name="telefono" type="tel"/>
+</fieldset>
+<fieldset>
+<legend>Tus intereses en la newsletter</legend>
+<label for="modelo">Modelo que te interesa *</label>
+<select id="modelo" name="modelo" required="">
+<option value="">Selecciona un modelo</option>
+<option value="seat600">SEAT 600</option>
+<option value="escarabajo">Volkswagen Escarabajo</option>
+<option value="renault4">Renault 4</option>
+<option value="otro">Otro modelo</option>
+</select>
+<p>¿Tienes un vehículo clásico? *</p>
+<label class="opcion"><input name="propietario" required="" type="radio" value="si"/> Sí</label>
+<label class="opcion"><input name="propietario" type="radio" value="no"/> No</label>
+<label class="opcion"><input name="propietario" type="radio" value="buscando"/> Estoy buscando uno</label>
+<label for="mensaje">Consulta sobre la newsletter *</label>
+<textarea id="mensaje" name="mensaje" placeholder="Cuéntanos qué te gustaría saber sobre la newsletter o qué temas te interesan..." required="" rows="5"></textarea>
+</fieldset>
+<p><small>Los campos marcados con * son obligatorios.</small></p>
+<button type="submit">Enviar consulta</button>
+</form>
+</section>
+</main>
+<footer>
+<p>El garaje clásico · Proyecto de Lenguaje de Marcas · DAM 1</p>
+</footer>
+</body>
+</html>
+
